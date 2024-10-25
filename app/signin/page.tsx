@@ -1,10 +1,20 @@
+//Libraries
+import Image from "next/image";
+
+//Images
+import oliveLogo from "../Assets/Images/oliveLogo.png";
+
 export default function SignIn() {
   return (
     <div>
       <div className="flex w-full justify-center items-center min-h-screen p-5">
         <div className="flex flex-col bg-[#ffffff] p-5 gap-4 border-[2px] border-[rgba(238,238,238,0.8)] rounded-lg w-[95vw] max-w-[360px]">
           <div>
-            <h1>Logo</h1>
+            <Image
+              src={oliveLogo}
+              alt="Olive Logo"
+              className="w-[25vw] sm:w-[15vw] md:w-[13vw] lg:w-[10vw] xl:w-[7vw] 2xl:w-[5.5vw]"
+            />
           </div>
           <div>
             <h2 className="text-2xl font-medium">Sign In</h2>
@@ -59,7 +69,7 @@ export default function SignIn() {
             </div>
           </div>
           <div className="flex border-t-[2px] border-[rgba(238,238,238,0.8)]">
-            <button className="btn btn-primary w-full mt-5">Sign In</button>
+            <button className="btn bg-[#485424] text-white w-full mt-5">Sign In</button>
           </div>
           <div className="flex border-t-[2px] border-[rgba(238,238,238,0.8)]">
             <button className="btn btn-outline btn-default w-full mt-5">
