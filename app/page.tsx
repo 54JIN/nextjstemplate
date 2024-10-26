@@ -58,14 +58,14 @@ export default function Home() {
             className="text-[#485424] text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-center w-[90vw] sm:w-[80vw] md:w-[80vw] lg:w-[80vw] xl:w-[60vw] 2xl:w-[60vw] max-w-[745px]"
             variants={headerVariants}
           >
-            Networking platform for producers & singers
+           Perfect fit, powered by 3D scanning.
           </motion.h1>
           <motion.p
             className="text-[#5D5D5D] text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-center w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[45vw] xl:w-[45vw] 2xl:w-[45vw] max-w-[700px]"
             variants={textVariants}
           >
-            Join a community of emerging singers and producers ready to shape
-            the sound of tomorrow. Get early access by joining the waitlist now!
+            We use advanced 3D scanning technology to get precise measurements
+            of your body.
           </motion.p>
           <motion.div
             variants={formVariants}
@@ -121,20 +121,18 @@ export default function Home() {
       <div className="flex justify-center bg-[#ffffff] pt-20 pb-20">
         <div className="flex flex-col w-[90%] max-w-[1200px] gap-10 sm:gap-10 md:gap-10 lg:gap-20 xl:gap-20 2xl:gap-20">
           <h2 className="text-[#485424] text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl md:pr-[10vw] lg:pr-[20vw] xl:pr-[20vw] 2xl:pr-[20vw]">
-            Greet, meet, and connect with your favorite singers and producers
+            If you pick, it will fit
           </h2>
           <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0">
             <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
             <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
-                You need collaboration.
+                Perfect Fits
               </h4>
               <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                Looking for upcoming artists is a tedious task, so look no
-                further than on this platform.
-              </p>
-              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                Find someone in your network, message and collaborate.
+                Eliminate the frustration of seeing the design you want but
+                being stuck without the right size or in an annoying cycle of
+                returns
               </p>
             </div>
           </div>
@@ -142,11 +140,12 @@ export default function Home() {
             <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
             <div className="flex flex-col lg:justify-center lg:pt-10 lg:pb-10 lg:pr-10 xl:pt-20 xl:pb-20 xl:pr-20 2xl:pt-20 2xl:pb-20 2xl:pr-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
-                You need to identify talent in every corner.
+                High Precision 3D scanning
               </h4>
               <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                You can&#39;t miss a talent when you are hungry for fame. So
-                keep hunting for talent on this platform.
+                We get our perfect fit from our advanced and easy-to-use 3D scan
+                technology that gives millimeter precision with the ease of your
+                phone
               </p>
             </div>
           </div>
@@ -154,15 +153,12 @@ export default function Home() {
             <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
             <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
-                You need to make sure you found your appropriate partner.
+                Unique Designs
               </h4>
               <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                Finding good talent is like finding a needle in a haystack.
-                Thankfully, we have some needle-finding experience.
-              </p>
-              <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-[#5D5D5D]">
-                Upload medical bills, and we will cross-reference the bills
-                against the records to ensure no records are missing.
+                We collaborate with independent designers to create
+                one-of-a-kind tailored pieces to match not only your size but
+                also your style
               </p>
             </div>
           </div>
@@ -184,7 +180,7 @@ export default function Home() {
       <div className="flex lg:justify-center pt-10 pb-10 lg:p-20">
         <div className="flex flex-col w-[90vw] lg:w-[80vw] pl-5 gap-5">
           <h2 className="text-[#485424] text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl md:pr-[10vw] lg:pr-[20vw] xl:pr-[20vw] 2xl:pr-[20vw]">
-            How Melody Works
+            How Size & Stitch Works
           </h2>
           <p className="text-md sm:text-lg md:text-lg lg:text-lg xl:text-md 2xl:text-md text-[#5D5D5D]">
             Our platform is optimized for your needs.

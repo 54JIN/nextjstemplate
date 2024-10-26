@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 //Images
-import oliveLogo from "../Assets/Images/oliveLogo.png";
+import logo from "../Assets/Images/logo.png";
 
 export default function SignIn() {
   return (
@@ -11,8 +11,8 @@ export default function SignIn() {
         <div className="flex flex-col bg-[#ffffff] p-5 gap-4 border-[2px] border-[rgba(238,238,238,0.8)] rounded-lg w-[95vw] max-w-[360px]">
           <div>
             <Image
-              src={oliveLogo}
-              alt="Olive Logo"
+              src={logo}
+              alt="Logo"
               className="w-[25vw] sm:w-[15vw] md:w-[13vw] lg:w-[10vw] xl:w-[7vw] 2xl:w-[5.5vw]"
             />
           </div>
