@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MelodyMeets",
-  description: "An application to help upcoming producers and singers connect.",
+  title: "Size&Stitch",
+  description: "A platform to find designs that perfectly fit.",
 };
 
 export default function RootLayout({
