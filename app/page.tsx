@@ -6,9 +6,10 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 //Images
-import featureImg1 from "./Assets/Images/featureImg1.jpg";
-import featureImg2 from "./Assets/Images/featureImg2.jpg";
-import featureImg3 from "./Assets/Images/featureImg3.jpg";
+import featureImg1 from "./Assets/Images/featureImg1.png";
+import featureImg2 from "./Assets/Images/featureImg2.png";
+import featureImg3 from "./Assets/Images/featureImg3.png";
+import featureImg4 from "./Assets/Images/featureImg4.png";
 
 //Components
 import Header from "./Components/Header";
@@ -58,7 +59,7 @@ export default function Home() {
             className="text-[#485424] text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-center w-[90vw] sm:w-[80vw] md:w-[80vw] lg:w-[80vw] xl:w-[60vw] 2xl:w-[60vw] max-w-[745px]"
             variants={headerVariants}
           >
-           Perfect fit, powered by 3D scanning.
+            Perfect fit, powered by 3D scanning.
           </motion.h1>
           <motion.p
             className="text-[#5D5D5D] text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg text-center w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[45vw] xl:w-[45vw] 2xl:w-[45vw] max-w-[700px]"
@@ -102,21 +103,33 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-10">
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <Image
-            src={featureImg2}
+            src={featureImg1}
             alt="Feature 2"
-            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw] border-[9px] border-[rgba(238,238,238,0.8)] rounded-lg"
+            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw]"
           />
           <Image
-            src={featureImg1}
+            src={featureImg2}
             alt="Feature 1"
-            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw] border-[9px] border-[rgba(238,238,238,0.8)] rounded-lg"
+            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw]"
           />
         </div>
-        <Image
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+          <Image
+            src={featureImg3}
+            alt="Feature 2"
+            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw]"
+          />
+          <Image
+            src={featureImg4}
+            alt="Feature 1"
+            className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw]"
+          />
+        </div>
+        {/* <Image
           src={featureImg3}
           alt="Feature 3"
           className="w-[90vw] sm:w-[90vw] md:w-[40vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[20vw] border-[9px] border-[rgba(238,238,238,0.8)] rounded-lg"
-        />
+        /> */}
       </div>
       <div className="flex justify-center bg-[#ffffff] pt-20 pb-20">
         <div className="flex flex-col w-[90%] max-w-[1200px] gap-10 sm:gap-10 md:gap-10 lg:gap-20 xl:gap-20 2xl:gap-20">
@@ -124,7 +137,13 @@ export default function Home() {
             If you pick, it will fit
           </h2>
           <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0">
-            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex justify-center w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl">
+              <Image
+                src={featureImg2}
+                alt="Feature 1"
+                className="w-[60vw] sm:w-[60vw] md:w-[60vw] lg:w-[30vw] xl:w-[28vw] 2xl:w-[20vw]"
+              />
+            </div>
             <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
                 Perfect Fits
@@ -137,7 +156,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-10 lg:flex-row-reverse lg:justify-between lg:gap-0">
-            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex justify-center w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl">
+              <Image
+                src={featureImg1}
+                alt="Feature 1"
+                className="w-[60vw] sm:w-[60vw] md:w-[60vw] lg:w-[30vw] xl:w-[28vw] 2xl:w-[20vw]"
+              />
+            </div>
             <div className="flex flex-col lg:justify-center lg:pt-10 lg:pb-10 lg:pr-10 xl:pt-20 xl:pb-20 xl:pr-20 2xl:pt-20 2xl:pb-20 2xl:pr-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
                 High Precision 3D scanning
@@ -150,7 +175,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0">
-            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex justify-center w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl">
+              <Image
+                src={featureImg4}
+                alt="Feature 1"
+                className="w-[60vw] sm:w-[60vw] md:w-[60vw] lg:w-[30vw] xl:w-[28vw] 2xl:w-[20vw]"
+              />
+            </div>
             <div className="flex flex-col lg:justify-center lg:p-10 xl:p-20 2xl:p-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
                 Unique Designs
@@ -163,7 +194,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-10 lg:flex-row-reverse lg:justify-between lg:gap-0">
-            <div className="flex w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl"></div>
+            <div className="flex justify-center w-full lg:w-[45vw] h-[350px] sm:h-[550px] md:h-[750px] lg:h-[490px] xl:h-[650px] 2xl:h-[600px] bg-[rgba(200,215,153,1)] rounded-xl">
+              <Image
+                src={featureImg4}
+                alt="Feature 1"
+                className="w-[60vw] sm:w-[60vw] md:w-[60vw] lg:w-[30vw] xl:w-[28vw] 2xl:w-[20vw]"
+              />
+            </div>
             <div className="flex flex-col lg:justify-center lg:pt-10 lg:pb-10 lg:pr-10 xl:pt-20 xl:pb-20 xl:pr-20 2xl:pt-20 2xl:pb-20 2xl:pr-20 gap-5 lg:w-[45vw]">
               <h4 className="text-[#485424] text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
                 You need organization.
