@@ -1,10 +1,34 @@
+"use client";
+
 //Libraries
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 //Images
 import logo from "../Assets/Images/logo.png";
 
+import { useState } from "react";
+import { ChangeEvent } from 'react';
+
 export default function SignIn() {
+  const router = useRouter();
+
+  const [formData, setFormData] = useState({ email: "", password: "" });
+
+  const handleChange = (evt: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = evt.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const clickHandler = () => {
+    if(formData.email === "admin@email.com" && formData.password === "admin101") {
+      router.push('/designer-dashboard');
+    }
+  };
+
   return (
     <div>
       <div className="flex w-full justify-center items-center min-h-screen p-5">
@@ -39,6 +63,9 @@ export default function SignIn() {
                   type="text"
                   className="grow text-md"
                   placeholder="johndoe@email.com"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </label>
             </div>
@@ -64,12 +91,17 @@ export default function SignIn() {
                   type="password"
                   className="grow text-md"
                   placeholder="••••••••••••"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
                 />
               </label>
             </div>
           </div>
           <div className="flex border-t-[2px] border-[rgba(238,238,238,0.8)]">
-            <button className="btn bg-[#485424] text-white w-full mt-5">Sign In</button>
+            <button className="btn bg-[#485424] text-white w-full mt-5" onClick={clickHandler}>
+              Sign In
+            </button>
           </div>
           <div className="flex border-t-[2px] border-[rgba(238,238,238,0.8)]">
             <button className="btn btn-outline btn-default w-full mt-5">
