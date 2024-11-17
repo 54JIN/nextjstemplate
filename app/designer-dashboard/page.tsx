@@ -1,11 +1,15 @@
+"use client"
+
 //Components
 import Sidebar from "../Components/Sidebar";
 import OverviewDashboard from "../Components/OverviewDashboard";
 
 export default function DesignerDashboard() {
   return (
-    <div className="flex flex-row h-screen pl-4 pr-4 pt-4 pb-4 gap-5">
-      <Sidebar />
+    <div className="flex h-auto xl:h-screen flex-col md:flex-row p-5 gap-5">
+      <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 w-[97vw] lg:w-auto lg:static lg:left-auto lg:transform-none lg:translate-x-0 z-10">
+        <Sidebar />
+      </div>
       <OverviewDashboard />
     </div>
   );
